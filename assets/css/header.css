@@ -21,6 +21,12 @@ Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character Space
 }
 /* font-family: 'Barlow Condensed', sans-serif; */
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
 body {
     padding: 0;
     margin: 0;
@@ -53,13 +59,108 @@ body {
     margin-left: 24px;
 }
 
+/* Estilos para el botón y el contenido desplegable */
 .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
     background-image: url(../shared/icon-hamburger.svg);
+    background-repeat: no-repeat;
     background-size: contain;
-
+    background-position: center;
     width: 24px;
     height: 21px;
-
+    background-color: #0B0D17;
     margin-top: 33px;
     margin-right: 24px;
+    border: none;
+    cursor: pointer;
+
+    line-height: 33px;
+  }
+
+  
+  
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    top: 40px;
+    right: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: transparent;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 20px;
+    position: relative;
+    backdrop-filter: blur(16px);
+    
 }
+
+/* Tu CSS existente */
+
+/* Agrega el siguiente estilo para ocultar el icono cuando se abre la lista */
+.dropdown-content.show #dropbtn {
+    display: none;
+  }
+  
+
+  .dropdown-content::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url('ruta-a-tu-imagen-x.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .dropdown-content a {
+    color: var(--white);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2.7px;
+    transform: scaleX(0.77);
+    padding: 0px 0px 15px 0px;
+    padding-top: 30px;
+    margin-left: -11px;
+    font-weight: 600;
+  }
+
+  .dropdown-content span {
+    color: var(--white);
+    font-family: 'Barlow Condensed';
+    font-weight: 200;
+    font-size: 16px;
+  }
+  
+  .dropdown-content a:nth-child(2) {
+    padding-top: 88px;
+  }
+  
+  .show {
+    display: block;
+  }
+
+  
+
+  .close-icon {
+    background-image: url(../shared/icon-close.svg);
+    background-size: cover;
+
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    width: 20px;
+    height: 20px;
+  }
+  

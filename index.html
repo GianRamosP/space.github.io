@@ -13,7 +13,17 @@
   <div class="main-container">
     <div class="header">
       <div class="icon"></div>
-      <div class="dropdown"></div>
+      <div class="dropdown">
+        <button onclick="toggleDropdown()" id="dropbtn" class="dropbtn"></button>
+        <div id="myDropdown" class="dropdown-content">
+          <div class="close-icon" id="closeIcon"></div>
+          <a href="#">01 <span>HOME</span></a>
+          <a href="#">02 <span>DESTINATION</span></a>
+          <a href="#">03 <span>CREW</span></a>
+          <a href="#">04 <span>TECHNOLOGY</span></a>
+        </div>
+      </div>
+      <script src="./assets/js/dropdown.js"></script>
     </div>
     <div class="body-container">
       <h4>SO, YOU WANT TO TRAVEL TO</h4>
@@ -22,13 +32,6 @@
     </div>
     <div class="circle">EXPLORE</div>
   </div>
-
-
-  <!-- Solo agregado en 1440px -->
-  <!-- 00 Home
-  01 Destination
-  02 Crew
-  03 Technology -->
 
 </body>
 </html>
