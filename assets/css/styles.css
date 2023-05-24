@@ -29,7 +29,7 @@ body {
 }
 
 .main-container {
-    width: 375px;
+    width: 360px;
     height: 667px;
     background-image: url(../home/background-home-mobile.jpg);
     background-size: cover;
