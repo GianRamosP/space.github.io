@@ -29,9 +29,9 @@ body {
 }
 
 .main-container {
-    width: 360px;
+    width: 375px;
     height: 667px;
-    background-image: url(../home/background-home-mobile.jpg);
+    background-image: url(../home/background-home-mobile-375x667.jpg);
     background-size: cover;
 
     margin: 0 auto;
@@ -129,4 +129,10 @@ body {
     margin: 0 auto;
 
     margin-top: 61px;
+}
+
+@media (min-width: 360px) and (max-width: 374px) {
+    .main-container {
+        background-image: url(../home/background-home-mobile-360x640.jpg);
+    }
 }
