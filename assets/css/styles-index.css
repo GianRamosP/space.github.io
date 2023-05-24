@@ -1,0 +1,74 @@
+.main-container {
+    background-image: url(../home/background-home-mobile-375x667.jpg);
+}
+
+.body-container {
+    margin: 0 24px;
+    margin-top: 48px;
+}
+
+.body-container h4 {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+
+    font-weight: 100;
+    text-align: center;
+    color: var(--skyblue);
+    transform: scaleX(0.77)
+}
+
+.body-container h1 {
+    font-family: 'Bellefair', sans-serif; 
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 0;
+    color: var(--white);
+}
+
+.body-container p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    font-stretch: narrower;
+    text-align: center;
+    width: 327px;
+    margin-top: 21px;
+    color: var(--skyblue);
+    line-height: 25px;
+    letter-spacing: 0;
+}
+
+.circle {
+    font-family: 'Bellefair', serif;
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+
+    text-align: center;
+    line-height: 150px;
+    color: var(--dark-blue);
+    letter-spacing: 1.25px;
+    font-size: 20px;
+    font-weight: 400;
+
+    margin: 0 auto;
+
+    margin-top: 61px;
+}
+
+@media (min-width: 360px) and (max-width: 374px) {
+    .main-container {
+        width: 375px;
+        height: 667px;
+        background-image: url(../home/background-home-mobile-360x640.jpg);
+        background-size: cover;
+        margin: 0 auto;
+    }
+}
