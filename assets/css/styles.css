@@ -137,7 +137,6 @@ body {
         height: 640px;
         background-image: url(../home/background-home-mobile-360x640.jpg);
         background-size: cover;
-
-        margin: 0 auto;        
+        margin: 0 auto;
     }
 }
