@@ -6,13 +6,19 @@
 
 /* Typography */
 /* 150px 100px 56px 32px 28px*/
-@import url(../fonts/Bellefair-Regular.ttf);
+@font-face {
+    font-family: Bellefair;
+    src: url(../fonts/Bellefair-Regular.ttf);
+}
 /* font-family: 'Bellefair', serif; */
 
 /* Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character Space  
 Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character Space
     Nav Text - Barlow Condensed Regular - 16px - 2.7 Character Space*/
-@import url(../fonts/BarlowCondensed-Regular.ttf);
+@font-face {
+    font-family: BarlowCondensed;
+    src: url(../fonts/BarlowCondensed-Light.ttf), url(../fonts/BarlowCondensed-Regular.ttf);
+}
 /* font-family: 'Barlow Condensed', sans-serif; */
 
 body {
@@ -74,15 +80,17 @@ body {
 
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 16px;
-    letter-spacing: 0.1px;
+    letter-spacing: 2.7px;
 
-    font-weight: 400;
+    font-weight: 100;
     text-align: center;
     color: var(--skyblue);
+    transform: scaleX(0.77)
+    
 }
 
 .body-container h1 {
-    font-family: 'Bellefair', serif;
+    font-family: 'Bellefair', sans-serif; 
     font-size: 80px;
     font-weight: 400;
     text-align: center;
@@ -94,11 +102,14 @@ body {
 .body-container p {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 100;
+    font-stretch: narrower;
     text-align: center;
     width: 327px;
     margin-top: 21px;
     color: var(--skyblue);
+    line-height: 25px;
+    letter-spacing: 0;
 }
 
 .circle {
@@ -117,5 +128,5 @@ body {
 
     margin: 0 auto;
 
-    margin-top: 96px;
+    margin-top: 61px;
 }
