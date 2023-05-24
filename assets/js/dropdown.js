@@ -1,19 +1,18 @@
 function toggleDropdown() {
   var dropdownContent = document.getElementById("myDropdown");
   var dropbtn = document.getElementById("dropbtn");
-  var closeIcon = document.getElementById("closeIcon");
-  
-  dropdownContent.classList.toggle("show");
   
   if (dropdownContent.classList.contains("show")) {
-    dropbtn.style.display = "none";
-  } else {
+    dropdownContent.classList.remove("show");
     dropbtn.style.display = "block";
+  } else {
+    dropdownContent.classList.add("show");
+    dropbtn.style.display = "none";
   }
 }
 
 // Cierra el contenido desplegable si se hace clic fuera de él
-window.onclick = function(event) {
+window.addEventListener('click', function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
@@ -26,4 +25,4 @@ window.onclick = function(event) {
       }
     }
   }
-}
+});
