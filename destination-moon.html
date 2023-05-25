@@ -12,43 +12,113 @@
 </head>
 <body>
 
-  <div class="main-container">
+  <div class="main-container text-center">
     <div class="header">
       <div class="icon"></div>
       <div class="dropdown">
-        <button onclick="toggleDropdown()" class="dropbtn"></button>
+        <button onclick="toggleDropdown()" id="dropbtn" class="dropbtn"></button>
         <div id="myDropdown" class="dropdown-content">
-          <a href="#">00 Home</a>
-          <a href="#">01 Destination</a>
-          <a href="#">02 Crew</a>
-          <a href="#">03 Technology</a>
+          <div class="close-icon" id="closeIcon"></div>
+          <a href="#">01 <span class="span-span">HOME</span></a>
+          <a href="#">02 <span class="span-span">DESTINATION</span></a>
+          <a href="#">03 <span class="span-span">CREW</span></a>
+          <a href="#">04 <span class="span-span">TECHNOLOGY</span></a>
+        </div>
       </div>
     </div>
     <div class="body-moon-container">
-      <h4>01 PICK YOUR DESTINATION</h1>
-      <div class="img-circ"></div>
-      <div class="list">
-        <a href="">MOON</a>
-        <a href="">MARS</a>
-        <a href="">EUROPA</a>
-        <a href="">TITAN</a>
+      <h4 class="h4-subtitle color-white"><span class="span-span">01</span>  PICK YOUR DESTINATION</h1>
+      <div class="img-moon"></div>
+      <div class="list h4-subtitle">
+        <a href="#" class="color-skyblue" id="moon-link" data-image="./destination/image-moon.webp">MOON</a>
+        <a href="#" class="color-skyblue" id="mars-link" data-image="./destination/image-mars.webp">MARS</a>
+        <a href="#" class="color-skyblue" id="europa-link">EUROPA</a>
+        <a href="#" class="color-skyblue" id="titan-link">TITAN</a>
       </div>
-      <h1>MOON</h1>
-      <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-        regain perspective and come back refreshed. While you’re there, take in some history 
-        by visiting the Luna 2 and Apollo 11 landing sites.</p>
-      <div class="data">
-        <div class="distance">
-          <h4>Avg. distance</h4>
-          <h1>384,400 km</h1>
-        </div>
-        <div class="time">
-          <h4>Est. travel time</h4>
-          <h1>3 days</h1>
+
+
+      <div id="moon-content" class="destination-content">
+        <!-- Contenido para el destino Moon -->
+        <h1 class="h1-title color-white">MOON</h1>
+        <p class="p-body color-skyblue">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+        <div class="divisor color-dark-blue"></div>
+          <div class="data text-center">
+          <div class="distance">
+            <h4 class="h4-subtitle color-skyblue">AVG. DISTANCE</h4>
+            <h1 class="h1-title color-white">384,400 KM</h1>
+          </div>
+          <div class="time">
+            <h4 class="h4-subtitle color-skyblue">EST. TRAVEL TIME</h4>
+            <h1 class="h1-title color-white">3 DAYS</h1>
+          </div>
         </div>
       </div>
+      
+
+      <div id="mars-content" class="destination-content">
+        <!-- Contenido para el destino Mars -->
+        <h1 class="h1-title color-white">MARS</h1>
+        <p class="p-body color-skyblue">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+          the tallest planetary mountain in our solar system. It’s two and a half times 
+          the size of Everest!</p>
+        <div class="divisor color-dark-blue"></div>
+        <div class="data text-center">
+          <div class="distance">
+            <h4 class="h4-subtitle color-skyblue">AVG. DISTANCE</h4>
+            <h1 class="h1-title color-white">225 MIL. KM</h1>
+          </div>
+          <div class="time">
+            <h4 class="h4-subtitle color-skyblue">EST. TRAVEL TIME</h4>
+            <h1 class="h1-title color-white">9 MONTHS</h1>
+          </div>
+        </div>
+      </div>
+    
+      <div id="europa-content" class="destination-content">
+        <!-- Contenido para el destino Europa -->
+        <h1 class="h1-title color-white">EUROPA</h1>
+        <p class="p-body color-skyblue">The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+  winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+  ice skating, curling, hockey, or simple relaxation in your snug 
+  wintery cabin.</p>
+        <div class="divisor color-dark-blue"></div>
+        <div class="data text-center">
+          <div class="distance">
+            <h4 class="h4-subtitle color-skyblue">AVG. DISTANCE</h4>
+            <h1 class="h1-title color-white">628 MIL. KM</h1>
+          </div>
+          <div class="time">
+            <h4 class="h4-subtitle color-skyblue">EST. TRAVEL TIME</h4>
+            <h1 class="h1-title color-white">3 YEARS</h1>
+          </div>
+        </div>
+      </div>
+    
+      <div id="titan-content" class="destination-content">
+        <!-- Contenido para el destino Titan -->
+        <h1 class="h1-title color-white">TITAN</h1>
+        <p class="p-body color-skyblue">The only moon known to have a dense atmosphere other than Earth, Titan 
+          is a home away from home (just a few hundred degrees colder!). As a 
+          bonus, you get striking views of the Rings of Saturn.</p>
+        <div class="divisor color-dark-blue"></div>
+        <div class="data text-center">
+          <div class="distance">
+            <h4 class="h4-subtitle color-skyblue">AVG. DISTANCE</h4>
+            <h1 class="h1-title color-white">6 BIL. KM</h1>
+          </div>
+          <div class="time">
+            <h4 class="h4-subtitle color-skyblue">EST. TRAVEL TIME</h4>
+            <h1 class="h1-title color-white">7 YEARS</h1>
+          </div>
+        </div>
+      </div>
+      
+
+
+      
     </div>
   </div>
-
+  <script src="./assets/js/dropdown.js"></script>
+  <script src="./assets/js/show-info.js"></script>
 </body>
 </html>

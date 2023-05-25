@@ -1,4 +1,110 @@
 .main-container {
     background-image: url(../destination/background-destination-mobile-360x640.jpg);
+    height: 850px;
+    
 }
 
+.body-moon-container {
+    margin: 0 19px;
+}
+
+.body-moon-container h4 {
+    margin-top: 0;
+}
+
+.body-moon-container h1 {
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.body-moon-container p {
+    margin-top: 10px;
+}
+
+.body-moon-container span {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Barlow Condensed';
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.img-moon {
+    background-size: cover;
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.list {
+    width: 307px;
+    height: 28px;
+    margin: 0 auto;
+    margin-top: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list a {
+    font-size: 14px;
+    transform: scaleX(0.77);
+}
+
+.list a:focus {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+.divisor {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 33px;
+    margin-bottom: 36px;
+}
+
+.time {
+    margin-top: 38px;
+}
+
+.data h1 {
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.data h4 {
+    transform: scaleX(0.77);
+    font-size: 14px;
+}
+
+.time h1 {
+    font-size: 28px;
+}
+
+.distance h4 {
+    font-weight: 100;
+    transform: scaleX(0.77);
+}
+
+.time h4 {
+    font-weight: 100;
+    transform: scaleX(0.77);
+}
+
+.img-moon.moon {
+background-image: url(../destination/image-moon.webp);
+}
+
+.img-moon.mars {
+background-image: url(../destination/image-mars.webp);
+}
+
+.img-moon.europa {
+background-image: url(../destination/image-europa.webp);
+}
+
+.img-moon.titan {
+background-image: url(../destination/image-titan.webp);
+}
+  

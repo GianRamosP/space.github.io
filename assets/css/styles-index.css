@@ -11,37 +11,21 @@
     margin: 0;
     padding: 0;
 
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 16px;
-    letter-spacing: 2.7px;
-
     font-weight: 100;
     text-align: center;
-    color: var(--skyblue);
-    transform: scaleX(0.77)
 }
 
 .body-container h1 {
-    font-family: 'Bellefair', sans-serif; 
-    font-size: 80px;
-    font-weight: 400;
     text-align: center;
+    font-weight: 400;
+    
     margin-top: 18px;
     margin-bottom: 0;
-    color: var(--white);
 }
 
 .body-container p {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 15px;
-    font-weight: 100;
-    font-stretch: narrower;
-    text-align: center;
     width: 327px;
-    margin-top: 21px;
-    color: var(--skyblue);
-    line-height: 25px;
-    letter-spacing: 0;
+    margin-top: 21px;    
 }
 
 .circle {
