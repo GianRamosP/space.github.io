@@ -39,36 +39,78 @@ document.addEventListener('DOMContentLoaded', function() {
   changeOption('moon', 'moon');
   showContent(moonContent);
 
+  // Agregar la clase 'active' al enlace 'moonLink' por defecto
+  moonLink.classList.add('active');
+
+  // Enfocar el enlace 'moonLink' al cargar la página
+  moonLink.focus();
+
   // Escuchar el evento clic en cada enlace de opción
   moonLink.addEventListener('click', function(event) {
     event.preventDefault(); // Evitar el comportamiento predeterminado de redireccionamiento
 
-    // Llamar a las funciones de cambio de opción y contenido
-    changeOption('moon', 'moon');
-    showContent(moonContent);
+    // Si moonLink no tiene la clase 'active', realizar el cambio de opción y contenido
+    if (!moonLink.classList.contains('active')) {
+      // Llamar a las funciones de cambio de opción y contenido
+      changeOption('moon', 'moon');
+      showContent(moonContent);
+
+      // Agregar la clase 'active' al enlace 'moonLink' y removerla de los demás enlaces
+      moonLink.classList.add('active');
+      marsLink.classList.remove('active');
+      europaLink.classList.remove('active');
+      titanLink.classList.remove('active');
+    }
   });
 
   marsLink.addEventListener('click', function(event) {
     event.preventDefault(); // Evitar el comportamiento predeterminado de redireccionamiento
 
-    // Llamar a las funciones de cambio de opción y contenido
-    changeOption('mars', 'mars');
-    showContent(marsContent);
+    // Si marsLink no tiene la clase 'active', realizar el cambio de opción y contenido
+    if (!marsLink.classList.contains('active')) {
+      // Llamar a las funciones de cambio de opción y contenido
+      changeOption('mars', 'mars');
+      showContent(marsContent);
+
+      // Agregar la clase 'active' al enlace 'marsLink' y removerla de los demás enlaces
+      moonLink.classList.remove('active');
+      marsLink.classList.add('active');
+      europaLink.classList.remove('active');
+      titanLink.classList.remove('active');
+    }
   });
 
   europaLink.addEventListener('click', function(event) {
     event.preventDefault(); // Evitar el comportamiento predeterminado de redireccionamiento
 
-    // Llamar a las funciones de cambio de opción y contenido
-    changeOption('europa', 'europa');
-    showContent(europaContent);
+    // Si europaLink no tiene la clase 'active', realizar el cambio de opción y contenido
+    if (!europaLink.classList.contains('active')) {
+      // Llamar a las funciones de cambio de opción y contenido
+      changeOption('europa', 'europa');
+      showContent(europaContent);
+
+      // Agregar la clase 'active' al enlace 'europaLink' y removerla de los demás enlaces
+      moonLink.classList.remove('active');
+      marsLink.classList.remove('active');
+      europaLink.classList.add('active');
+      titanLink.classList.remove('active');
+    }
   });
 
   titanLink.addEventListener('click', function(event) {
     event.preventDefault(); // Evitar el comportamiento predeterminado de redireccionamiento
 
-    // Llamar a las funciones de cambio de opción y contenido
-    changeOption('titan', 'titan');
-    showContent(titanContent);
+    // Si titanLink no tiene la clase 'active', realizar el cambio de opción y contenido
+    if (!titanLink.classList.contains('active')) {
+      // Llamar a las funciones de cambio de opción y contenido
+      changeOption('titan', 'titan');
+      showContent(titanContent);
+
+      // Agregar la clase 'active' al enlace 'titanLink' y removerla de los demás enlaces
+      moonLink.classList.remove('active');
+      marsLink.classList.remove('active');
+      europaLink.classList.remove('active');
+      titanLink.classList.add('active');
+    }
   });
 });

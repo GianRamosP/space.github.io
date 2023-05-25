@@ -49,6 +49,7 @@
 .list a {
     font-size: 14px;
     transform: scaleX(0.77);
+    outline: none;
 }
 
 .list a:focus {
